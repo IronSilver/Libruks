@@ -39,17 +39,17 @@ body {
 }
 
 
-@media (max-width: 1100px) {
+@media (max-width: 2388px) {
 
 #Buscador {
     position: relative;
     background-color: rgba(41, 44, 46, 0);
     color: white;
-    font-size: 12pt;
+    font-size: 30pt;
     text-align: center;
     width: 50vw;
-    height: 40px;
-    margin-top: 40px;
+    height: 80px;
+    margin-top: 80px;
     margin-left: 25vw;
     padding-left: 5vh;
     padding-right: 5vh;
@@ -71,7 +71,7 @@ body {
 
 #Superpocion {
     width: 70vw;
-    margin-top: 100px;
+    margin-top: 200px;
     margin-left: 15vw;
     position: relative;
     display: block;
@@ -81,8 +81,6 @@ body {
 
 
 }
-
-
 
 
 
