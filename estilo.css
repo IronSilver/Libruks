@@ -1,0 +1,46 @@
+body {
+    background-color: rgba(41, 44, 46, 0.877);
+    margin: 0;
+    padding: 0;
+}
+
+
+#Buscador {
+    position: absolute;
+    background-color: rgba(41, 44, 46, 0);
+    color: white;
+    font-size: 12pt;
+    text-align: center;
+    width: 30vw;
+    height: 7vh;
+    margin-left: 35vw;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    border: 4px rgba(201, 206, 209, 0.877) solid;
+    border-radius: 30px;
+    box-sizing:border-box;
+}
+
+#Ella {
+    width: 20vw;
+    margin-left: 50vw;
+    margin-top: 180px;
+    position: absolute;
+    border-radius: 15px;
+}
+
+
+#Superpocion {
+    width: 20vw;
+    margin-top: 180px;
+    margin-left: 20vw;
+    position: absolute;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
