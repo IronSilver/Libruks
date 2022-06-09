@@ -47,10 +47,10 @@ body {
     color: white;
     font-size: 30pt;
     text-align: center;
-    width: 50vw;
+    width: 70vw;
     height: 80px;
-    margin-top: 80px;
-    margin-left: 25vw;
+    margin-top: 100px;
+    margin-left: 15vw;
     padding-left: 5vh;
     padding-right: 5vh;
     border: 4px rgba(201, 206, 209, 0.877) solid;
@@ -71,7 +71,7 @@ body {
 
 #Superpocion {
     width: 70vw;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-left: 15vw;
     position: relative;
     display: block;
@@ -81,6 +81,7 @@ body {
 
 
 }
+
 
 
 
