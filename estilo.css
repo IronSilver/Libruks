@@ -39,6 +39,48 @@ body {
 }
 
 
+@media (max-width: 1000px) {
+
+#Buscador {
+    position: relative;
+    background-color: rgba(41, 44, 46, 0);
+    color: white;
+    font-size: 12pt;
+    text-align: center;
+    width: 50vw;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: 25vw;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    border: 4px rgba(201, 206, 209, 0.877) solid;
+    border-radius: 30px;
+    box-sizing:border-box;
+    display: block;
+}
+
+#Ella {
+    width: 70vw;
+    margin-left: 15vw;
+    margin-top: 40px;
+    position: relative;
+    display: block;
+    border-radius: 15px;
+}
+
+
+#Superpocion {
+    width: 70vw;
+    margin-top: 100px;
+    margin-left: 15vw;
+    position: relative;
+    display: block;
+    border-radius: 15px;
+}
+
+
+
+}
 
 
 
