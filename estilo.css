@@ -2,17 +2,19 @@ body {
     background-color: rgba(41, 44, 46, 0.877);
     margin: 0;
     padding: 0;
+    width: max-content;
 }
 
 
 #Buscador {
-    position: absolute;
+    position: fixed;
     background-color: rgba(41, 44, 46, 0);
     color: white;
-    font-size: 12pt;
+    font-size: 1.5vw;
     text-align: center;
     width: 30vw;
-    height: 7vh;
+    height: 10vh;
+    margin-top: 5vh;
     margin-left: 35vw;
     padding-left: 5vh;
     padding-right: 5vh;
@@ -22,34 +24,80 @@ body {
 }
 
 #Ella {
-    width: 20vw;
-    margin-left: 50vw;
-    margin-top: 180px;
-    position: absolute;
+    height: 50vh;
+    width: auto;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 35vh;
+    position: relative;
     border-radius: 15px;
 }
 
 
 #Superpocion {
-    width: 20vw;
-    margin-top: 180px;
-    margin-left: 20vw;
-    position: absolute;
+    height: 50vh;
+    width: auto;
+    margin-top: 35vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    position: relative;
     border-radius: 15px;
 }
 
 
-@media (max-width: 2388px) {
+#Muerte {
+    height: 50vh;
+    width: auto;
+    margin-top: 35vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    position: relative;
+    border-radius: 15px;
+}
+
+
+#Sangre {
+    height: 50vh;
+    width: auto;
+    margin-top: 35vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    position: relative;
+    border-radius: 15px;
+}
+
+
+#Dulceria {
+    height: 50vh;
+    width: auto;
+    margin-top: 35vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    position: relative;
+    border-radius: 15px;
+}
+
+#Angel {
+    height: 50vh;
+    width: auto;
+    margin-top: 35vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    position: relative;
+    border-radius: 15px;
+}
+
+@media (max-width: 800px) {
 
 #Buscador {
     position: relative;
     background-color: rgba(41, 44, 46, 0);
     color: white;
-    font-size: 30pt;
+    font-size: 5vw;
     text-align: center;
     width: 70vw;
     height: 80px;
-    margin-top: 100px;
+    margin-top: 10vh;
     margin-left: 15vw;
     padding-left: 5vh;
     padding-right: 5vh;
@@ -59,21 +107,65 @@ body {
     display: block;
 }
 
-#Ella {
+
+#Superpocion {
     width: 70vw;
+    height: auto;
+    margin-top: 30vh;
     margin-left: 15vw;
-    margin-top: 40px;
     position: relative;
     display: block;
     border-radius: 15px;
 }
 
 
-#Superpocion {
+#Ella {
     width: 70vw;
+    height: auto;
+    margin-left: 15vw;
+    margin-top: 100px;
+    position: relative;
+    display: block;
+    border-radius: 15px;
+}
+
+#Muerte {
+    width: 70vw;
+    height: auto;
     margin-top: 100px;
     margin-left: 15vw;
     position: relative;
+    display: block;
+    border-radius: 15px;
+}
+
+
+#Sangre {
+    width: 70vw;
+    height: auto;
+    margin-top: 100px;
+    margin-left: 15vw;
+    position: relative;
+    display: block;
+    border-radius: 15px;
+}
+
+#Dulceria {
+    width: 70vw;
+    height: auto;
+    margin-top: 100px;
+    margin-left: 15vw;
+    position: relative;
+    display: block;
+    border-radius: 15px;
+}
+
+#Angel {
+    width: 70vw;
+    height: auto;
+    margin-top: 100px;
+    margin-left: 15vw;
+    position: absolute;
     display: block;
     border-radius: 15px;
 }
