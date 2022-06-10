@@ -87,7 +87,7 @@ body {
     border-radius: 15px;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 2000px) {
 
 #Buscador {
     position: relative;
