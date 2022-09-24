@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Libruska</title>
+        <link rel="stylesheet" type="text/css" href="styles/estilos.css">
+        <link rel="stylesheet" type="text/css" href="styles/icons/icons.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <div class="logo_cont">
+                <img src="src/images/page/logo.webp" alt="logo" class="logo">
+                <h1>Libruska</h1>    
+            </div>
+            <nav class="menu">
+                <ul>
+                    <!--Nombres temporales, no se me ocurrió mucho-->
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Categorías</a></li>
+                    <li><a href="">Escritores</a></li>
+                    <li><a href="">Algo más</a></li> 
+                </ul>
+            </nav>
+        </header>
+        <div class="contenedor"> 
+            <!--Contenedor de la barra de búsqueda-->
+            <div class="search_cont">
+                <div class="searchbar">
+                    <input id="Buscador" class="buscador" type="text" placeholder="Buscador">
+                    <span class="icon-search"></span>
+                </div>
+            </div>
+            <!--Contenedor de libros-->
+            <article class="books-content">
+                <!--Contenedor de un libro individual-->
+                <% books.forEach(book=>{%>
+                    <div class="book">
+                            <img src="<%=book.image%>">
+                        <div class="info_hover">
+                            <p><span>Título:</span><%=book.title%></p>
+                            <p><span>Autor:</span><%=book.author%></p>
+                            <p><span>Año:</span><%=book.year%></p>
+                            <p><span>Etiquetas:</span><%=book.labels.join(',')%></p>
+                        </div>
+                    </div>
+                <%})%>
+            </article>
+        </div>
+    </body>
+</html>

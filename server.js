@@ -1,4 +1,5 @@
 const express = require("express");
+const fs = require("fs").promises;
 
 const app = express();
 
@@ -12,10 +13,26 @@ app.use(express.static(__dirname + "/public"));
 
 app.use("styles", express.static(__dirname + "/public/styles"));
 app.use("src", express.static(__dirname + "/public/src"));
+app.use("/portadas", express.static(__dirname + "/public/src/images/portadas"))
 
-//rutas
+//especificar el motor de plantilla
+app.set("view engine", "ejs");
+
+
+
+//rutas 
+/**
+ * Por ahora van a aparecer todos los libros
+ */
 app.get("/", (req, res) => {
-    res.sendFile(`${__dirname}/index.html`);
+    fs.readFile(`${__dirname}/private/books.json`, {encoding: "utf-8"}).then((data)=>{
+        const books = JSON.parse(data);
+
+        res.render("index", {
+            books
+        })    
+    })
+    
 });
 
 app.listen(config.port, config.host, () => {

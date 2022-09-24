@@ -105,7 +105,7 @@ header .menu ul li a{
     cursor: pointer;
 }
 
-/*Contenedor de libros*/
+/*-------------Contenedor de libros-------------*/
 .books-content{
     display: flex;
     width: 90%;
@@ -114,16 +114,42 @@ header .menu ul li a{
     flex-wrap: wrap;
     padding: 15px;
 }
-/*contenedor de cada libro*/
+/*--------contenedor de cada libro--------*/
 .book{
-    width: 100%;
     margin: 10px 0px;
     min-width: 150px;
     max-width: 350px;
+    position: relative;
+}
+
+.book:hover .info_hover{
+    height: 30%;
+    padding: 13px;
 }
 .book img{
     width: 100%;
+    height: 100%;
 }
+
+/*información oculta*/
+
+
+.book .info_hover {
+    position: absolute;
+    background-color: rgba(180, 203, 86, 0.5);
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    transition: all 1s ease;
+    bottom: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+.info_hover span{
+    font-weight: 700;
+}
+
+
 
 
 /*MEDIA QUERYS*/

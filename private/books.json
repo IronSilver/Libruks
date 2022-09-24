@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Superpoción de amor",
+        "image": "portadas/Superpoción.jpg",
+        "author": "José Luis Vásquez",
+        "year": "2010",
+        "labels": ["comedia", "romantico"]
+    },
+    {
+        "title": "Cómo aprendí amar a un demonio",
+        "image": "portadas/Demonio.jpg",
+        "author": "José Luis Vásquez",
+        "year": "2010",
+        "labels": ["comedia", "romantico"]
+    },
+    {
+        "title": "Lo que ignoras de tu muerte",
+        "image": "portadas/Muerte.jpg",
+        "author": "José Luis Vásquez",
+        "year": "2010",
+        "labels": ["comedia", "romantico"]
+    }
+]
