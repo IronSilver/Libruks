@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/upload" method="post" enctype="multipart/form-data" id="form">
+        <p><label>Title: </label></p>
+        <input type="text" name="title" placeholder="Título...">
+        <p><label>Author: </label></p>
+        <input type="text" name="author" placeholder="Autor...">
+        <p><label>year: </label></p>
+        <input type="number" name="year" placeholder="año de publicación...">
+        <p><label>Imagen o nombre de imagen existente: </label></p>
+        <!--Subir una imagen-->
+        <input type="file" name="portada">
+        <input type="text" name="path" placeholder="ruta generada" style="width:300px ;">
+        <br>
+        <button id="cleanBtn" type="button">Limpiar imagen</button>
+        <p>En caso de usar una imagen existente, no se deberá subir una imagen, de lo contrario el nombre ingresado se tomará como alias de la imagen subida. <strong>(NO CAMBIES LA EXTENSION)</strong></p>
+        <br>
+        <input type="submit" value="Subir imagen"> 
+    </form>
+    <script>
+        const form = document.getElementById("form");
+        const title = document.getElementsByName("title")[0];
+        const author = document.getElementsByName("author")[0];
+        const year = document.getElementsByName("year")[0];
+        const file = document.getElementsByName("portada")[0];
+        const ruta = document.getElementsByName("path")[0];
+
+        file.addEventListener("change", (ev)=>{
+            ruta.value = file.files[0].name;
+        })
+
+
+        form.addEventListener("submit", (ev)=>{
+            ev.preventDefault();
+            
+            if(title.value == "" || author.value == "" || year.value == "" || ruta.value == ""){
+                alert("Los campos title, author, path y year deben estar con contenido!");
+                return;
+            }
+
+            
+            form.submit();
+        })
+
+
+        document.getElementById("cleanBtn").addEventListener("click", (ev)=>{
+            file.value = "";
+            ruta.value = "";
+        })
+    </script>
+</body>
+</html>

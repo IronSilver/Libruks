@@ -4,20 +4,59 @@
         "image": "portadas/Superpoción.jpg",
         "author": "José Luis Vásquez",
         "year": "2010",
-        "labels": ["comedia", "romantico"]
+        "labels": [
+            "comedia",
+            "romantico"
+        ]
     },
     {
         "title": "Cómo aprendí amar a un demonio",
         "image": "portadas/Demonio.jpg",
         "author": "José Luis Vásquez",
         "year": "2010",
-        "labels": ["comedia", "romantico"]
+        "labels": [
+            "comedia",
+            "romantico"
+        ]
     },
     {
         "title": "Lo que ignoras de tu muerte",
         "image": "portadas/Muerte.jpg",
         "author": "José Luis Vásquez",
         "year": "2010",
-        "labels": ["comedia", "romantico"]
+        "labels": [
+            "comedia",
+            "romantico"
+        ]
+    },
+    {
+        "title": "Una carta escrita con sangre",
+        "image": "portadas/Sangre.jpg",
+        "author": "José Luis Vásquez",
+        "year": "2010",
+        "labels": [
+            "comedia",
+            "romantico"
+        ]
+    },
+    {
+        "title": "La dulcería en el confín de la tierra",
+        "image": "portadas/DulceriaConfinTierra.jpg",
+        "author": "José Luis Vásquez",
+        "year": "2009",
+        "labels": [
+            "comedia",
+            "romantico"
+        ]
+    },
+    {
+        "title": "Ella o cómo aprendí a soportar a un Ángel",
+        "image": "portadas/Angel.jpg",
+        "author": "José Luis Vásquez",
+        "year": "2010",
+        "labels": [
+            "comedia",
+            "romantico"
+        ]
     }
 ]
